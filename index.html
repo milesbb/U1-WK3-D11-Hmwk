@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- apologies for grim css was in airport departures lounge when i wrote this -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +17,46 @@
   <body>
     <div class="header">
       <h1>CleverPhone</h1>
+      <button onclick="onClick1()">EX7</button>
+      <button onclick="onClick2()">EX8</button>
+      <button onclick="onClick3()">EX9</button>
+      <button onclick="onClick4()">EX10</button>
+      <button onclick="onClick5()">EX11</button>
+      <button onclick="onClick6()">EX12</button>
+      <script>
+        function onClick1() {
+          const header = document.getElementsByTagName("h1")[0];
+          header.style.color = "green";
+        }
+        function onClick2() {
+          const header = document.getElementsByTagName("body")[0];
+          header.style.backgroundColor = "yellow";
+        }
+        function onClick3() {
+          const header = document.getElementById("footerAddress");
+          header.innerText = "1 Bogglebing Avenue, DGU 2GS";
+        }
+        function onClick4() {
+          const header = document.getElementsByTagName("a");
+          for (let i = 0; i < header.length; i++) {
+            header[i].classList.add("ex7class");
+          }
+        }
+        function onClick5() {
+          const header = document.getElementsByTagName("img");
+          for (let i = 0; i < header.length; i++) {
+            header[i].classList.toggle("hidden");
+          }
+        }
+        function onClick6() {
+          const header = document.getElementsByClassName("price");
+          let randomColor = 0;
+          for (let i = 0; i < header.length; i++) {
+            randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            header[i].style.color = "#" + randomColor;
+          }
+        }
+      </script>
     </div>
     <table>
       <tr>
@@ -37,7 +78,7 @@
           Expand your view to the 6.6-inch Infinity-V Display of Galaxy A22 5G
           and see what you've been missing
         </td>
-        <td class="prod-price">£140.34</td>
+        <td class="price">£140.34</td>
         <td>
           <a
             class="prod-link"
@@ -59,7 +100,7 @@
           FHD+ technology makes your everyday content look sharp, crisp, and
           clear.
         </td>
-        <td class="prod-price">£109.99</td>
+        <td class="price">£109.99</td>
         <td>
           <a
             class="prod-link"
@@ -80,7 +121,7 @@
           Great Performance, Unlocked for all carriers modern smartphone ready
           to be used in your everyday life
         </td>
-        <td class="prod-price">£145.99</td>
+        <td class="price">£145.99</td>
         <td>
           <a
             class="prod-link"
@@ -101,7 +142,7 @@
           Camera: 50MP AI Triple Camera, 8MP selfie camera, One rear LED light
           with single color temperature.
         </td>
-        <td class="prod-price">£144.99</td>
+        <td class="price">£144.99</td>
         <td>
           <a
             class="prod-link"
@@ -122,7 +163,7 @@
           Modern meets durable to create a hard working phone made from
           hard-wearing polycarbonate that fits perfectly in your hand
         </td>
-        <td class="prod-price">£40.99</td>
+        <td class="price">£40.99</td>
         <td>
           <a
             class="prod-link"
@@ -134,15 +175,15 @@
     </table>
 
     <div class="msg-board-container">
-        <h2>Message Board</h2>
-        <div class="msg-container">
-            <p>TEXT HERE</p>
-        </div>
+      <h2>Message Board</h2>
+      <div class="msg-container">
+        <p>TEXT HERE</p>
+      </div>
     </div>
 
     <footer>
       <p>CleverPhone</p>
-      <p>24 Dallas Avenue, Brickston, L23 HUJ</p>
+      <p id="footerAddress">24 Dallas Avenue, Brickston, L23 HUJ</p>
     </footer>
   </body>
 </html>
