@@ -1,0 +1,97 @@
+h1 {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    margin: auto;
+}
+
+body {
+    font-family: 'Mingzat', sans-serif;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-top: 2px, solid, black;
+}
+
+th {
+    background-color: #53516e;
+    color: white;
+}
+
+td {
+    padding: 2%;
+    justify-items: center;
+}
+
+.header {
+    background-color: #53516e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.prod-title {
+
+}
+
+.prod-image {  
+    width: 40%;
+    display: block;
+    justify-items: center;
+}
+
+.prod-desc {
+    
+}
+
+.prod-price {
+    
+}
+
+.prod-link {
+    
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.msg-board-container {
+    background-color: #53516e;
+    margin: auto;
+    display: block;
+    width: 100%;
+    justify-items: center;
+    padding: ;
+}
+
+.msg-container {
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+    width: 90%;
+    margin-bottom: 10%;
+    
+}
+
+p {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    justify-items: center;
+    width: 90%;
+}
+
+footer {
+    background-color: #53516e;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
